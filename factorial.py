@@ -1,0 +1,10 @@
+#Factorial Program
+def factorial(n):
+    if n<2:
+        return 1    #As factorial of 0 & 1 is equals to 1
+    else:
+        return n*factorial(n-1) #Keeps on calling the function 'factorial' until the value of argument 'n' becomes less than  2.
+
+num = int(input("Enter a Number: "))    #Takes the input of number whose factorial has to be calculated.
+fact = factorial(num)   #Calls the function 'factorial' with 'num' as the argument.
+print(f"Factorial of {num} is {fact}")  #Prints the factorial of 'num'
